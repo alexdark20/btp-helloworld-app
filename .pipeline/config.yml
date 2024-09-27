@@ -7,8 +7,7 @@ service:
       cfCredentialsId: "deploy"
 stages:
   Build:
-    applicationName: "helloworldui5"
-    source: helloworldui5
+    source: "/home/user/projects/helloworldui5/mta.yaml"
     npmExecuteLint: false
   Acceptance:
     cloudFoundryDeploy: false
