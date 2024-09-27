@@ -7,6 +7,7 @@ service:
       cfCredentialsId: "deploy"
 stages:
   Build:
+    applicationName: "helloworldui5"
     source: helloworldui5
     npmExecuteLint: false
   Acceptance:
