@@ -7,7 +7,7 @@ service:
       cfCredentialsId: "deploy"
 stages:
   Build:
-    source: sapbtphelloworldui5
+    source: main
     mavenExecuteStaticCodeChecks: false
     npmExecuteLint: false
   Acceptance:
