@@ -7,7 +7,7 @@ service:
       cfCredentialsId: "deploy"
 stages:
   Build:
-    source: btp-helloworld-app
+    source: sapbtphelloworldui5
     mavenExecuteStaticCodeChecks: false
     npmExecuteLint: false
   Acceptance:
