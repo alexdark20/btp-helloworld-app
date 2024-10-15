@@ -4,7 +4,7 @@ service:
   buildToolVersion: "MBTJ17N18"
   stages:
     Release:
-      cfCredentialsId: "deploy"
+      cfCredentialsId: "deployonbtp"
 stages:
   Build:
     source: helloworldui5
