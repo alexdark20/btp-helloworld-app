@@ -8,7 +8,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ],
         },
         onPress: function () {
             debugger;
-            MessageBox.alert("You have been alerted!");
+            MessageBox.alert("You have pressed button '1'");
         }
     });
 });
