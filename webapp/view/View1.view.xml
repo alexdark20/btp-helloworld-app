@@ -1,0 +1,23 @@
+<mvc:View controllerName="sap.btp.helloworldui5.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <FlexBox
+			height="auto"
+			alignItems="Start"
+			justifyContent="Start"
+            class="sapUiSmallMarginBottom">
+			<Button text="1" press="onPress" type="Emphasized" class="sapUiSmallMarginEnd" customData="{ key: 'buttonLabel', value: 'First ' }" />
+			<Button text="2" press="onPress" type="Emphasized" class="sapUiSmallMarginEnd" customData="{ key: 'buttonLabel', value: 'Second ' }" />
+			<Button text="3" press="onPress" type="Emphasized" customData="{ key: 'buttonLabel', value: 'Third ' }" />
+		</FlexBox>
+        <FlexBox
+            height="auto"
+            alignItems="Start"
+            justifyContent="Start">
+            <Button type="Reject" text="Reject" press="onPress"/>
+        </FlexBox>
+        </content>
+    </Page>
+</mvc:View>
