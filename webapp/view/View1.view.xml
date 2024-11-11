@@ -3,21 +3,35 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-        <FlexBox
-			height="auto"
-			alignItems="Start"
-			justifyContent="Start"
-            class="sapUiSmallMarginBottom">
-			<Button text="1" press="onPress" type="Emphasized" class="sapUiSmallMarginEnd" customData="{ key: 'buttonLabel', value: 'First ' }" />
-			<Button text="2" press="onPress" type="Emphasized" class="sapUiSmallMarginEnd" customData="{ key: 'buttonLabel', value: 'Second ' }" />
-			<Button text="3" press="onPress" type="Emphasized" customData="{ key: 'buttonLabel', value: 'Third ' }" />
-		</FlexBox>
-        <FlexBox
-            height="auto"
-            alignItems="Start"
-            justifyContent="Start">
-            <Button type="Reject" text="Reject" press="onPress"/>
-        </FlexBox>
+            <Panel width="500px" class="sapUiResponsiveMargin" accessibleRole="Region">
+                <FlexBox
+                    height="auto"
+                    alignItems="Start"
+                    justifyContent="Start"
+                    class="sapUiSmallMarginBottom">
+                    <Button text="1" press="onPress" type="Emphasized" class="sapUiSmallMarginEnd" customData="{ key: 'buttonLabel', value: 'First ' }" />
+                    <Button text="2" press="onPress" type="Emphasized" class="sapUiSmallMarginEnd" customData="{ key: 'buttonLabel', value: 'Second ' }" />
+                    <Button text="3" press="onPress" type="Emphasized" customData="{ key: 'buttonLabel', value: 'Third ' }" />
+                </FlexBox>
+                <VBox alignItems="Center">
+                    <Avatar
+                        displaySize="XL"
+                        displayShape="Square"
+                        src="{/Shutterstock}"
+                        press="onPress"
+                        badgeIcon="sap-icon://edit" />
+                    <Text
+                        textAlign="Center"
+                        text="Avatar"
+                        class="sapUiSmallMarginTop"/>
+                </VBox>
+            </Panel>        
+            <FlexBox
+                height="auto"
+                alignItems="Start"
+                justifyContent="Start">
+                <Button type="Reject" text="Reject" press="onPress" class="customMarginLeft"/>
+            </FlexBox>
         </content>
     </Page>
 </mvc:View>
