@@ -3,6 +3,16 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
+            <Panel width="500px" height="55px" class="sapUiResponsiveMargin" accessibleRole="Region">
+                <MessageStrip 
+                    text="Information with custom icon"
+                    type="Information"
+                    showIcon="true"
+                    customIcon="sap-icon://locked"
+                    class="sapUiMediumMarginBottom">
+                </MessageStrip>
+            </Panel> 
+
             <Panel width="500px" class="sapUiResponsiveMargin" accessibleRole="Region">
                 <FlexBox
                     height="auto"
